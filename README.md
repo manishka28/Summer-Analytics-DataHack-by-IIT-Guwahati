@@ -9,8 +9,10 @@ Transform all features to be on the same scale. This matters when using regulari
 ## NA Imputation: 
 Logistic regression does not handle NA values. I will use median imputation, which fills missing values with the median from the training data, implemented with SimpleImputer.
 
+## Pipeline
 I am also going to start using Scikit-Learn's built-in composition functionality to encapsulate everything into a pipeline.
 
+## Steps
 I will first chain together the preprocessing steps (scaling and imputing) into one intermediate pipeline object numeric_preprocessing_steps. Then, we use that with Scikit-Learn's ColumnTransformer, which is a convenient way to grab columns out of a pandas data frame and then apply a specified transformer.
 
 
