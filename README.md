@@ -4,8 +4,10 @@ This is submission of DataHack Hack-a-thon at Summer Analytics Workshop, IIT Guw
 
 I will be using scikit-learn's logistic regression implementation.
 
-## Scaling: Transform all features to be on the same scale. This matters when using regularization, which we will discuss in the next section. I will use StandardScaler, also known as Z-score scaling. This scales and shifts features so that they have zero mean and unit variance.
-## NA Imputation: Logistic regression does not handle NA values. I will use median imputation, which fills missing values with the median from the training data, implemented with SimpleImputer.
+## Scaling: 
+Transform all features to be on the same scale. This matters when using regularization, which we will discuss in the next section. I will use StandardScaler, also known as Z-score scaling. This scales and shifts features so that they have zero mean and unit variance.
+## NA Imputation: 
+Logistic regression does not handle NA values. I will use median imputation, which fills missing values with the median from the training data, implemented with SimpleImputer.
 
 I am also going to start using Scikit-Learn's built-in composition functionality to encapsulate everything into a pipeline.
 
